@@ -198,7 +198,7 @@ export default function ContactPage() {
                 <div className="space-y-4">
                   <a href="mailto:contact@masterofstrategies.com" className="group block space-y-2">
                     <p className="text-secondary font-semibold text-sm">General Inquiries</p>
-                    <p className="text-3xl md:text-3xl font-bold text-ink group-hover:text-primary transition-colors">contact@masterofstrategies.com</p>
+                    <p className="text-3xl md:text-2xl font-bold text-ink group-hover:text-primary transition-colors">contact@masterofstrategies.com</p>
                     <div className="w-12 h-1 bg-accent group-hover:w-24 transition-all"></div>
                   </a>
                 </div>
