@@ -64,7 +64,7 @@ export default function ContactPage() {
       </section>
 
       {/* CONTACT GRID */}
-      <section className="section-padding bg-slate-50 flex-grow">
+      <section className="section-padding bg-slate-50 grow">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
           
           {/* LEFT: CONTACT FORM */}
