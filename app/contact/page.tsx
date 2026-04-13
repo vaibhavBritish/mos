@@ -196,29 +196,20 @@ export default function ContactPage() {
               <div className="space-y-6">
                 <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-primary">Direct Contact</h3>
                 <div className="space-y-4">
-                  <a href="mailto:contact@masterofstrategies.com" className="group block space-y-2">
+                  <a href="mailto:mos@masterofstrategies.com" className="group block space-y-2">
                     <p className="text-secondary font-semibold text-sm">General Inquiries</p>
-                    <p className="text-3xl md:text-2xl font-bold text-ink group-hover:text-primary transition-colors">contact@masterofstrategies.com</p>
+                    <p className="text-3xl md:text-2xl font-bold text-ink group-hover:text-primary transition-colors">mos@masterofstrategies.com</p>
                     <div className="w-12 h-1 bg-accent group-hover:w-24 transition-all"></div>
                   </a>
                 </div>
               </div>
 
-              <div className="space-y-6">
-                <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-primary">Institutional Presence</h3>
-                <div className="space-y-2">
-                  <p className="text-2xl font-bold text-ink">New Delhi, India</p>
-                  <p className="text-lg text-secondary leading-relaxed">
-                    Strategically headquartered in the national capital to serve political, institutional, and corporate ecosystems globally.
-                  </p>
-                </div>
-              </div>
-
+            
               <div className="pt-8 border-t border-slate-200 space-y-6">
-                <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-primary">Our Ecosystem</h3>
+                <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-primary">Our Presence</h3>
                 <div className="flex flex-wrap gap-3">
                   {[
-                    "New Delhi", "Mumbai", "Bengalore", "International Scope"
+                    "UAE", "Dublin", "New Delhi", "Mumbai", "Jaipur", "Bengaluru", "Kolkata", "Patna", "Hyderabad", "Ahmedabad", "Dehradun", "Chennai"
                   ].map((loc, i) => (
                     <span key={i} className="px-5 py-2 bg-white rounded-full border border-slate-200 text-sm font-bold text-ink">
                       {loc}

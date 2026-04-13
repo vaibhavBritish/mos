@@ -42,6 +42,7 @@ export default function Navbar() {
           <Link href="/" className="nav-link">Home</Link>
           <Link href="/about" className="nav-link">About Us</Link>
           <Link href="/services" className="nav-link">Services</Link>
+          <Link href="/blogs" className="nav-link">Blogs</Link>
           <Link href="/contact" className="nav-link">Contact Us</Link>
           
           <Link

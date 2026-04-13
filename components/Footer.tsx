@@ -81,8 +81,8 @@ export default function Footer() {
             <div className="space-y-3">
               <p className="text-sm text-secondary">
                 <span className="block font-semibold text-ink">Email</span>
-                <a href="mailto:contact@masterofstrategies.com" className="hover:text-primary transition-colors">
-                  contact@masterofstrategies.com
+                <a href="mailto:mos@masterofstrategies.com" className="hover:text-primary transition-colors">
+                  mos@masterofstrategies.com
                 </a>
               </p>
             </div>
