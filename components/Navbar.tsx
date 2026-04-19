@@ -6,8 +6,10 @@ import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
@@ -46,7 +48,7 @@ export default function Navbar() {
           <Link href="/contact" className="nav-link">Contact Us</Link>
           
           <Link
-            href="#consultation"
+            href={mounted ? "mailto:mos@masterofstrategies.com?subject=Request%20for%20Consultation" : "#"}
             className="bg-primary text-white ml-2 px-7 py-2.5 rounded-md text-sm font-bold shadow-lg shadow-primary/20 hover:bg-primary-dark hover:shadow-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
           >
             Request Consultation

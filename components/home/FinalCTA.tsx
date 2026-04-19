@@ -18,7 +18,7 @@ export default function FinalCTA() {
           If you are looking for a strategy partner instead of just a service provider, let’s start a conversation.
         </p>
         <div className="flex flex-wrap justify-center gap-6">
-          <Link href="mailto:mos@masterofstrategies.com" className="bg-white text-primary px-10 py-4 rounded-md font-bold text-lg hover:bg-slate-50 transition-all shadow-xl">
+          <Link href="mailto:mos@masterofstrategies.com?subject=Consultation%20Request" className="bg-white text-primary px-10 py-4 rounded-md font-bold text-lg hover:bg-slate-50 transition-all shadow-xl">
             Request Consultation
           </Link>
           <Link href="/contact" className="border-2 border-white/30 text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-white/10 transition-all">

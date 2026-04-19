@@ -1,13 +1,11 @@
-import { prisma } from "@/app/lib/prisma";
+import { BLOG_POSTS } from "@/app/lib/blogs-data";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export default async function BlogDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = await prisma.post.findUnique({
-    where: { slug },
-  });
+  const post = BLOG_POSTS.find((p) => p.slug === slug);
 
   if (!post) {
     notFound();
@@ -59,9 +57,26 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
         </ScrollReveal>
 
         <ScrollReveal delay={400} className="prose prose-xl prose-slate max-w-none">
-          {post.content.split("\n").map((para, i) => (
-            para.trim() ? <p key={i} className="text-xl text-ink/80 leading-relaxed mb-8">{para}</p> : <br key={i} />
-          ))}
+          {post.content.split("\n").map((para, i) => {
+            const isHeading = para.trim().startsWith("### ");
+            const cleanText = para.trim().replace(/^###\s+/, "");
+            
+            if (!para.trim()) return <br key={i} />;
+            
+            if (isHeading) {
+              return (
+                <h3 key={i} className="text-2xl md:text-3xl font-black text-ink mt-12 mb-6 leading-tight">
+                  {cleanText}
+                </h3>
+              );
+            }
+            
+            return (
+              <p key={i} className="text-xl text-ink/80 leading-relaxed mb-8">
+                {para}
+              </p>
+            );
+          })}
         </ScrollReveal>
         
         <ScrollReveal delay={600} className="mt-24 pt-16 border-t border-slate-100">

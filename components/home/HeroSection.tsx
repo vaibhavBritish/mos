@@ -35,7 +35,7 @@ export default function HeroSection() {
             </p>
           </ScrollReveal>
           <ScrollReveal animation="fade-in-up" delay={300} className="flex flex-wrap gap-4 pt-4">
-            <Link href="/contact" className="btn-primary">
+            <Link href="mailto:mos@masterofstrategies.com?subject=Consultation%20Request" className="btn-primary">
               Schedule a Consultation
             </Link>
             <Link href="/services" className="btn-secondary">

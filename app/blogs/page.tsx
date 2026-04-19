@@ -1,12 +1,9 @@
-import { prisma } from "@/app/lib/prisma";
+import { BLOG_POSTS } from "@/app/lib/blogs-data";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export default async function BlogsPage() {
-  const posts = await prisma.post.findMany({
-    where: { published: true },
-    orderBy: { createdAt: "desc" },
-  });
+  const posts = BLOG_POSTS;
 
   return (
     <main className="min-h-screen pt-32 pb-20 bg-white">
